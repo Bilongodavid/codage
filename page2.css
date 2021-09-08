@@ -1,0 +1,200 @@
+body{
+    background-color: rgb(0, 0, 0);
+    padding: 0px;
+    margin: 0px;
+    display: block;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    
+    /*header en tête*/
+    
+    header{
+       background-color:  rgb(48, 2, 177);
+       display: flex;
+       color: rgb(255, 255, 255);
+       align-items: center; 
+        
+    }
+    header h1{
+       font-size: 25px;
+       margin: 10px;
+    }
+    header h2{
+       font-size: 20px;
+       margin: 10px;
+       border-left: 3px white solid;
+    }
+    @media all and (max-width:850px){
+       header{
+          background-color: rgb(48, 2, 177);
+          color: white;
+       }
+    }
+    @media all and (max-width: 750px){
+       
+       header h1{
+          font-size: 20px;
+       }
+       header h2{
+          font-size: 15px;
+       }
+    }
+    nav{
+      display: flex;
+      background-color: rgba(0, 0, 0, 0.801);
+      
+   }
+nav ul li{
+  list-style-type: none;
+  text-align: right;
+  
+}
+nav ul li ul li{
+ 
+ display: inline-flex;
+ margin-right: 20px;
+}
+nav ul li ul li a{
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 17px;
+}
+nav ul li ul li a:hover{
+  color: rgb(10, 14, 223);
+}
+#menude{
+  display: none;
+}
+hr{
+  color: rgb(255, 254, 254);
+  display: none;
+  
+}
+@media all and (max-width:850px)
+{
+
+  
+  nav ul li hr{
+     display: none;
+  }
+  nav ul li:hover hr{
+     display: block;
+  }
+  nav{
+     color: white;
+     
+  }
+ 
+  nav ul li ul li{
+     
+    
+     
+     display: none;
+     position: relative;
+     left: -80px;
+     padding: 17px;
+     margin: 0px;
+     
+  }
+  nav ul li:hover ul li{
+     display: block;
+  }
+  nav ul li{
+    text-align: left;
+     
+  }
+  #menude{
+     display: inline;
+     text-align: left ;
+  } 
+}
+
+
+
+       /*image menu*/
+    
+    
+   
+    article{
+        background-color: white;
+        text-align: center;
+
+    }
+    .taille{
+        width: 300px;
+        height: 300px;
+        border: 2px solid rgb(252, 252, 252);
+    }
+    /*footer*/
+footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    justify-content: center;
+    height: 220px;
+ }
+ #contact{
+    position: absolute;
+    right: 0px;
+ }
+ #e{
+    position: absolute;
+    left: 0px;
+ }
+ footer ul li{
+    list-style-type: none;
+ }
+ footer ul li a{
+    text-decoration: none;
+    color: white;
+ }
+ #payement{
+   text-align: center;
+}
+ @media all and (max-width:870px)
+ {
+    footer{
+       height: 173px;
+    }
+    footer p{
+       font-size: 14px;
+    } 
+    footer ul li{
+       font-size: 14px;
+    }
+    footer h2{
+       font-size: 17px;
+    }
+ @media all and (max-width:700px)
+ {
+    footer{
+       height: 145px;
+    }
+    footer p{
+       font-size: 11px;
+    } 
+    footer ul li{
+       font-size: 11px;
+    }
+    footer h2{
+       font-size: 15px;
+    }
+ }
+ 
+ }
+ @media all and (max-width:500px)
+ {
+    footer{
+       height: 100px;
+    }
+    footer p{
+       font-size: 10px;
+    } 
+    footer ul li{
+       font-size: 10px;
+    }
+    footer h2{
+       font-size: 11px;
+    }
+ }
